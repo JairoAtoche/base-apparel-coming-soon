@@ -1,6 +1,7 @@
 import './App.css';
 import logo from './images/logo.svg';
-import hero from './images/hero-mobile.jpg';
+import heroMobile from './images/hero-mobile.jpg';
+import heroDesktop from './images/hero-desktop.jpg';
 import Form from './components/Form';
 
 function App() {
@@ -12,14 +13,15 @@ function App() {
         </div>
       </header>
       <article className='content'>
-        <h1 className='content__h1'>We're coming soon</h1>
+        <h1 className='content__h1'><span className='content__h1--modifier'>We're</span><br />coming soon</h1>
         <p className='content__p'>
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <Form />
       </article>
       <aside className='hero'>
-        <img src={hero} alt='hero' className='hero__img'/>
+        <img src={heroMobile} alt='hero' className='hero__img--mobile'/>
+        <img src={heroDesktop} alt='hero' className='hero__img--desktop'/>
       </aside>
       <footer className="footer">
         <div className="footer__attribution">

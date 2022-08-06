@@ -1,0 +1,38 @@
+form {
+    position: relative;
+    width: 307px;
+    align-self: center;
+}
+
+.form__mail {
+    width: 307px;
+    height: 47px;
+    border-radius: 20px;
+    border: 1px solid var(--desaturated-red);
+    padding-left: 20px;
+    font-size: 14px;
+    position: relative;
+    background-color: transparent;
+}
+.form__mail::placeholder {
+    text-transform: capitalize;
+    color: var(--desaturated-red);
+    font-size: 14px;
+}
+
+.form__button {
+    position: absolute;
+    height: 47px;
+    width: 65px;
+    right: 0;
+    background-image: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form__button:hover {
+    opacity: 65%;
+    box-shadow: 0px 10px 10px 0px var(--desaturated-red);
+}
