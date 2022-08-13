@@ -30,14 +30,13 @@ function Form() {
 
     return(
         <form className='form' action='#' method='POST' onSubmit={handleSubmit}>
-            <input type='text' name='mail' placeholder='Email address' className={`form__mail ${classError ? 'form__mail--error' : '' }`} value={form.mail} onChange={handleChange} />
+            <input role='text' type='text' name='mail' placeholder='Email address' className={`form__mail ${classError ? 'form__mail--error' : '' }`} value={form.mail} onChange={handleChange} />
             <img src={error} alt='' className={`${classError ? 'form__icon-error' : 'disabled' }`}/>
-            <button className='form__button'>
-                <img src={arrow} alt="" />
+            <button role='button' className='form__button'>ㅤ
+                <img src={arrow} alt="" />ㅤ
             </button>
             <p className={`${classError ? 'form__p-error' : 'disabled' }`}>Please provide a valid email</p>
         </form>
     );
 }
-
 export default Form;

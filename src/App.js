@@ -12,13 +12,13 @@ function App() {
           <img src={logo} alt='logo' className='logo__img'/>
         </div>
       </header>
-      <article className='content'>
-        <h1 className='content__h1'><span className='content__h1--modifier'>We're</span><br />coming soon</h1>
-        <p className='content__p'>
+      <main className='content'>
+        <h1 role='heading' className='content__h1'><span className='content__h1--modifier'>We're</span><br />coming soon</h1>
+        <p className='content__p' role='contentinfo'>
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <Form />
-      </article>
+      </main>
       <aside className='hero'>
         <img src={heroMobile} alt='hero' className='hero__img--mobile'/>
         <img src={heroDesktop} alt='hero' className='hero__img--desktop'/>
