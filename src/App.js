@@ -13,8 +13,8 @@ function App() {
         </div>
       </header>
       <main className='content'>
-        <h1 role='heading' className='content__h1'><span className='content__h1--modifier'>We're</span><br />coming soon</h1>
-        <p className='content__p' role='contentinfo'>
+        <h1 className='content__h1'><span className='content__h1--modifier'>We're</span><br />coming soon</h1>
+        <p className='content__p'>
           Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
         </p>
         <Form />
